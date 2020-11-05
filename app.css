@@ -1,0 +1,94 @@
+
+
+body {
+    font-family: sans-serif;
+    background-color: #111d4a;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#cheeseList {
+    padding-inline-start: 0;
+    margin-left: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.cheese> h2 {
+    grid-area: name;
+    margin-bottom: 2px;
+}
+
+.cheese > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.cheese{
+    background-color: paleturquoise;
+    margin-bottom: 1rem; 
+    padding: 20px;
+  }
+
+ 
+  
+  
+  ul li {
+    background: #ff9999;
+    padding: 5px;
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 35px;
+  }
+
+  .bg-image {
+    /* The image used */
+    background-image: url("images.jpg");
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
